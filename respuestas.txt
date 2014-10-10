@@ -14,4 +14,53 @@ Hello world
 
 El intérprete interactivo mostrará la secuencia de ejecución de cada línea de código, mostrándonos incluso el contenido de esa línea, mientras que ejecutando "ruby helloWorld.rb" nos mostraría unicamente "hello world" por pantalla.
 
+26. ¿Cuál es el resultado de cada una de las siguientes operaciones?
+[1] pry(main)> puts x
+???
+=> ???
+[2] pry(main)> def hello
+[2] pry(main)* puts "Hello world"
+[2] pry(main)* end
+=> ???
+[3] pry(main)> hello
+???
+=> ???
+[4] pry(main)> byebye
+???
+=> ???
+[5] pry(main)> x = "changed"
+=> ???
+[6] pry(main)> exit
+program resumes here. Value of x is: ???
+
+---------------------------------------------
+
+La respuesta es:
+
+[1] pry(main)> puts x
+10
+=> nil
+[2] pry(main)> def hello
+[2] pry(main)*   puts "Hello world"
+[2] pry(main)* end  
+=> nil
+[3] pry(main)> hello
+Hello world
+=> nil
+[4] pry(main)> byebye
+bye bye world!!!
+=> nil
+[5] pry(main)> x = "changed"
+=> "changed"
+[6] pry(main)> exit
+program resumes here. Value of x is: changed.
+--------------------------------------------------
+
+27. ¿Cuáles son las diferencias entre la ejecución del programa "Hola Mundo" con el intérprete interactivo y con pry?
+
+pry nos permite cambiar los valores de las variables o funciones definidas durante la interpretación, mientras que con el intérprete interactivo no podemos hacerlo.
+
+
+
+
  
